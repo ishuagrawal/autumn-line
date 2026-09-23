@@ -1,5 +1,9 @@
 # autumn-line
 
+![autumn-line in photo view](docs/screenshot.jpg)
+
+**Live demo: [autumn-line.vercel.app](https://autumn-line.vercel.app/)**
+
 A cel-shaded, cartoon-style 3D recreation of an autumn railway scene, built with [Three.js](https://threejs.org/) and Vite.
 
 ## Prompt
