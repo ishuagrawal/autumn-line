@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Autumn Line</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="compare" hidden>
+      <div class="frame">
+        <img id="ref" src="reference.webp" alt="Reference photograph" draggable="false" />
+        <div class="handle"><span></span></div>
+        <div class="tag tag-l">Photo</div>
+        <div class="tag tag-r">Render</div>
+      </div>
+    </div>
+    <header id="title">
+      <h1>Autumn Line</h1>
+      <p>a cel-shaded study of an autumn railroad</p>
+    </header>
+    <nav id="bar">
+      <button data-act="photo" class="on">Photo view</button>
+      <button data-act="explore">Explore</button>
+      <button data-act="compare">Compare</button>
+      <span class="hint" id="hint">drag to look · scroll to zoom · WASD to walk</span>
+    </nav>
+    <div id="loading">
+      <div class="ld-inner">
+        <div class="ld-title">Autumn Line</div>
+        <div class="ld-bar"><i></i></div>
+        <div class="ld-msg">laying track</div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
